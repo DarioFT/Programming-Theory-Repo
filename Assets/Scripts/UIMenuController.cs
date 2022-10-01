@@ -33,6 +33,7 @@ public class UIMenuController : MonoBehaviour
 
     public void StartGame()
     {
+        PlayerPrefs.SetString("playerName", nameInput.text);
         SceneManager.LoadScene(1);
     }
 
